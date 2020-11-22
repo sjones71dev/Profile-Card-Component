@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+
+    /* Variables */
+
+    --dark-cyan: hsl(185, 75%, 39%);
+    --dark-blue: hsl(229,23%,23%);
+    --grey-blue: hsl(227, 10%, 46%);
+    --dark-grey: hsl(0, 0%, 59%);
+
+}
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: inherit;
+    
+  }
+  a, a:link, a:visited, a:active, a:any-link{
+    color: currentColor;
+    text-decoration: none;
+  }
+
+  body{
+      background-color: var(--dark-cyan);
+      overflow: hidden;
+      color: var(--dark-blue);
+  }
+  p{
+    text-align: center;
+  }
+  .bg_bubble{
+    position: absolute;
+    width: 75vw;
+    height: 75vw;
+  }
+  .bg_bubble.top{
+    transform: translate(-35%, -55%);
+    
+  }
+  .bg_bubble.bottom{
+    top: 50%;
+    left: 50%;
+    transform: translate(-4%, 0);
+  }
+  
+  .attribution{
+      color: rgba(200,200,200,1);
+      font-size: 12px;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      margin: 10px;
+  }
+
+  .profile_card{
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 52vh;
+    width: 48vh;
+    border-radius: 1rem;
+    color: var(--grey-blue);
+    background-color: #fff;
+    box-shadow: 15px 15px 100px 0px var(--grey-blue);
+    overflow: hidden;
+  }
+
+.profile_design{
+    display: block;
+    height: 37.5%;
+    background-image: url(../images/bg-pattern-card.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.profile_img{
+    display: flex;
+    position: relative;
+    height: 25%;
+    transform: translateY(-55%);
+}
+.profile_img img{
+    box-sizing: content-box;
+    height: 100%;
+    margin: 0 auto;
+    border: 6px white solid;
+    border-radius: 50%;
+}
+
+.profile_detail{
+    border-bottom: 1px solid var(--dark-grey);
+    height: 25%;
+    margin-top: -12.5%;
+    display: flex;
+    flex-direction: column;
+}
+.profile_detail p:nth-of-type(1), .stat{
+    margin: auto 0 12px 0;
+    font-size: 1rem;
+}
+.profile_detail p:nth-of-type(2), .stat_name{
+    margin: 0 0 auto 0;
+    font-size: 0.70rem;
+    letter-spacing: 1px;
+}
+.name, .stat{
+    font-weight: 700;
+    color: var(--dark-blue)
+}
+.age{
+    
+}
+.stat_name{
+    font-size: 0.5rem;
+    letter-spacing: 2.2px;
+    color: var(--grey-blue);
+    position: relative;
+    top: -6px
+}
+
+.profile_stats{
+    height: 25%;
+    list-style: none;
+    display: flex;
+    padding: 0 25px;
+}
+.profile_stats li{
+    display: inline-flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-top: 12px;
+    width: 25%;
+}
+
+
+/* Mobile Design */
+
+@media only screen and (max-width: 375px) {
+
+    .bg_bubble{
+        position: absolute;
+        width: 100vh;
+        height: 100vh;
+      }
+      .bg_bubble.top{
+        transform: translate(-65%, -60%);
+      }
+      .bg_bubble.bottom{
+        top: 50%;
+        left: 50%;
+        transform: translate(-10%, 10%);
+      }
+  }

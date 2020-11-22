@@ -8,28 +8,51 @@
   
   <title>Frontend Mentor | Profile card component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+   <link rel="stylesheet" href="./styles/style.css"> 
+
 </head>
 <body>
-  Victor Crest
-  26
-  London
 
-  80K
-  Followers
+  <div class="background">
+    <img src="./images/bg-pattern-top.svg" alt="" class="bg_bubble top">
+    <img src="./images/bg-pattern-bottom.svg" alt="" class="bg_bubble bottom">
+  </div>
 
-  803K
-  Likes
 
-  1.4K
-  Photos
+  <div class="profile_card">
+    <div class="profile_design"></div>
+    <div class="profile_img">
+      <img src="./images/image-victor.jpg" alt="Profile Image">
+    </div>
+    <div class="profile_detail">
+      <p>
+        <span class="name">Victor Crest</span>
+        <span class="age">26</span>
+      </p>
+      <p class="location">London</p>
+    </div>
+    <ul class="profile_stats">
+      <li>
+        <p class="stat">80K</p>
+        <p class="stat_name">Followers</p>
+      </li>
+      <li>
+        <p class="stat">803K</p>
+        <p class="stat_name">Likes</p>
+      </li>
+      <li>
+        <p class="stat">1.4K</p>
+        <p class="stat_name">Photos</p>
+      </li>
+    </ul>
+  </div>
+
+
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Steven Jones</a>.
   </div>
+
+
 </body>
 </html>
